@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESAFIO</title>
+</head>
+<h1>Criando um Aplicativo</h1>
+<p>SOMA</p>
+
+<body>
+  <input class="firstOne" type="number">
+  <summary> + </summary>
+  <input class="secondOne" type="number">
+  <button id="btn" onclick='somando()'> Clique aqui</button>
+  <p>RESPOSTA <span class="resultadoSoma"></span></p>
+
+  <P>SUBTRAÇAO</P>
+
+  <input class="third" type="number">
+  <summary> - </summary>
+  <input class="fourth" type="number">
+  <button id="btn" onclick='subtraindo()'> Clique aqui</button>
+  <p>TOTAL <span class="resultadorSubtraçao"></span></p>
+
+  <p>DIVISAO</p>
+
+  <input class="fifth" type="number">
+  <summary> / </summary>
+  <input class="sixth" type="number">
+  <button id="btn" onclick='dividindo()'>Clique aqui</button>
+  <p>TOTAL <span class="resultadoDivisao"></span></p>
+
+  <p>MULTIPLICAÇAO</p>
+
+  <input class="seventh" type="number">
+  <summary> * </summary>
+  <input class="eighth" type="number">
+  <button id="btn" onclick='multiplicando()'>Clique aqui</button>
+  <p>TOTAL <span class="resultadoMultiplicaçao"></span></p>
+
+  <script>
+    var firstOne = document.querySelector(".firstOne")
+    var secondOne = document.querySelector(".secondOne")
+    var resultado1 = document.querySelector(".resultadoSoma")
+    var button = document.querySelector("#btn")
+    function somando() {
+      var resultadoFinal = Number(firstOne.value) + Number(secondOne.value)
+      resultado1.innerHTML = resultadoFinal
+    }
+
+    var third = document.querySelector(".third")
+    var fourth = document.querySelector(".fourth")
+    var resultado2 = document.querySelector(".resultadorSubtraçao")
+    var button = document.querySelector("#btn")
+    function subtraindo() {
+      var resultadoFinal = Number(third.value) - Number(fourth.value)
+      resultado2.innerHTML = resultadoFinal
+    }
+
+    var fifth = document.querySelector(".fifth")
+    var sixth = document.querySelector(".sixth")
+    var resultado3 = document.querySelector(".resultadoDivisao")
+    var button = document.querySelector("#btn")
+    function dividindo() {
+      var resultadoFinal = Number(fifth.value) / Number(sixth.value)
+      resultado3.innerHTML = resultadoFinal
+    }
+
+    var seventh = document.querySelector(".seventh")
+    var eighth = document.querySelector(".eighth")
+    var resultado4 = document.querySelector(".resultadoMultiplicaçao")
+    var button = document.querySelector("#btn")
+    function multiplicando() {
+      var resultadoFinal = Number(seventh.value) * Number(eighth.value)
+      resultado4.innerHTML = resultadoFinal
+    }
+
+
+  </script>
+
+</html>
+</body>
